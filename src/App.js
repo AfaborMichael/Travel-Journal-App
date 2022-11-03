@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Journal from './components/Journal';
+import './index.css'
+import './style.css'
+import Nav from './components/Nav'
+import Data from './components/Data'
+
 
 function App() {
+  let journey  = Data.map(travel=>{
+    return(
+      <Journal 
+      Travels = {travel}
+      
+      
+      
+      
+      
+      />
+    )
+
+
+
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <Nav />
+    <section className='journey--list'>{journey}</section> 
     </div>
   );
 }
-
+ 
 export default App;
+

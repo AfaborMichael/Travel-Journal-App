@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.journal--cover{
+    display: flex;
+}
+.Nav{
+    border: 1px solid red;
+    background-color: rgb(231, 77, 77);
+    color: white;
+}
+.journal--japan{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid gold;
+}
+.japan--pic{
+    width: 125px;
+    height: 168px;
+    border-radius: 5px;
+}
+.journal--location{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid fuchsia;
+}
+.google--font{
+    text-decoration: none;
+}
+.journal--true-location{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 9px;
+}
